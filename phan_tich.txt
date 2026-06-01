@@ -1,0 +1,4 @@
+Khi truy cập /products vẫn xem được danh sách sản phẩm mà không cần đăng nhập vì project chưa tích hợp Spring Security
+Do chưa có dependency spring-boot-starter-security nên Spring Boot không tạo cơ chế xác thực và phân quyền mặc định.
+Mọi request sẽ được chuyển trực tiếp đến controller để xử lý mà không kiểm tra đăng nhập,
+dẫn đến tất cả endpoint đều có thể truy cập công khai.
